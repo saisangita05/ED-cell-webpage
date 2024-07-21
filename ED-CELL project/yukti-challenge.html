@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukti Challenge Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="register.html" class="register-button">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Details of <br>YUKTI CHALLENGE</h1>
+            <form id="yukti-challenge-form">
+                <textarea placeholder="Problem statement (upto 150 words)" required></textarea>
+                <select required>
+                    <option value="" disabled selected>Select problem category</option>
+                    <option value="Space Technology">Space Technology</option>
+                    <option value="Smart Automation">Smart Automation</option>
+                    <option value="Clean & Green Technology">Clean & Green Technology</option>
+                    <option value="Transportation & Lgistic">Transportation & Lgistic</option>
+                    <option value="Disaster Management">Disaster Management</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+                <textarea placeholder="Solution for your problem statement (briefly explain)" required></textarea>
+                <button type="submit">Confirm to register</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

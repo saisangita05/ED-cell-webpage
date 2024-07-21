@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Leader Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="register.html" class="register-button">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Details of <br>TEAM LEADER</h1>
+            <form id="team-leader-form">
+                <input type="text" placeholder="Enter your name" id="leader-name" required>
+                <input type="email" placeholder="Enter your mail ID" id="leader-email" required>
+                <input type="text" placeholder="Enter your phone number" id="leader-phone" required>
+                <select id="leader-year" required>
+                    <option value="" disabled selected>Select your year</option>
+                    <option value="1st year">1st year</option>
+                    <option value="2nd year">2nd year</option>
+                    <option value="3rd year">3rd year</option>
+                    <option value="4th year">4th year</option>
+                </select>
+                <select id="leader-branch" required>
+                    <option value="" disabled selected>Select your branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ME">ME</option>
+                </select>
+                <input type="number" placeholder="Enter the number of members in your team" id="team-members" required>
+                <button type="submit">Next</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Silicon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: rgba(2, 130, 132, 0.727); /* Transparent blue overlay */
+    z-index: -1;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.register-button {
+    background: orange;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+main .container {
+    max-width: 600px;
+    margin: 100px auto;
+    background: rgba(5, 27, 28, 0.85); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid orange;
+}
+
+main .container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main .container p {
+    margin-bottom: 20px;
+}
+
+main .container button,
+main .container input,
+main .container select,
+main .container textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border:  none;
+}
+
+main .container button {
+    background: orange;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
